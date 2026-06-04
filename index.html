@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Virus Typing Tools</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --border: #2e3345;
+      --text: #e2e4ea;
+      --text2: #9498a8;
+      --accent: #6c8cff;
+      --radius: 12px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .logo { font-size: 64px; margin-bottom: 16px; }
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: var(--text2);
+      margin-bottom: 48px;
+    }
+    .cards {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 40px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, transform 0.2s;
+      min-width: 280px;
+    }
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+    }
+    .card .icon { font-size: 48px; margin-bottom: 16px; }
+    .card h2 { font-size: 18px; margin-bottom: 8px; }
+    .card p { font-size: 13px; color: var(--text2); line-height: 1.5; }
+    footer {
+      margin-top: 48px;
+      font-size: 11px;
+      color: var(--text2);
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">🧬</div>
+  <h1>Virus Genotyping Tools</h1>
+  <p class="subtitle">Local sequence typing — no internet required after setup</p>
+
+  <div class="cards">
+    <a class="card" href="nov-typing/index.html">
+      <div class="icon">🔬</div>
+      <h2>Norovirus Typing</h2>
+      <p>VP1 + RdRp dual-region typing<br>Genogroup I, II, IV, VIII, IX</p>
+    </a>
+    <a class="card" href="rotavirus-a-typing/index.html">
+      <div class="icon">🦠</div>
+      <h2>Rotavirus A Typing</h2>
+      <p>VP7 (G-type) + VP4 (P-type) typing<br>G1–G12, P[4]–P[19]</p>
+    </a>
+  </div>
+
+  <footer>
+    Reference sequences from NCBI GenBank | Based on nov-typing architecture
+  </footer>
+</body>
+</html>
